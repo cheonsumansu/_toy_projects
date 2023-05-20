@@ -1,0 +1,54 @@
+/*
+background: #071e3d
+title: #21e6c1
+text: #278ea5
+etc: #1f4287
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "consolas", sans-serif;
+}
+body {
+    background-color: #071e3d;
+    text-align: center;
+    justify-content: center;
+}
+header {
+    margin: 10em auto 5em;
+    text-align: center;
+    color: #21e6c1;
+}
+.index-container input {
+    border: none;
+    outline: none;
+    width: 20em;
+    height: 3em;
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+}
+.index-container input:focus {
+    outline: 0.2em solid #278ea5;
+}
+#icon {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 0.8em;
+}
+.index-container label {
+    color: #ffffff;
+    padding: 0 0.5em;
+}
+#btn-container {
+    margin-top: 4em;
+}
+#btn-container button {
+    border: none;
+    margin: 1em 0.5em;
+    background-color: #278ea5;
+    width: 6em;
+    height: 6em;
+    cursor: pointer;
+    border-radius: 3em;
+}
