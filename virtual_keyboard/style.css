@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --light-beige: #fffbf5;
+    --beige: #f7efe5;
+    --light-purple: #c3acd0;
+    --click-light-purple: #d2bae6;
+    --purple: #7e589f;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+body {
+    background-color: var(--beige);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#text-container {
+    background-color: var(--light-beige);
+    width: 46rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #ebe4da;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.5rem;
+    overflow-y: auto;
+}
+#keyboard-container {
+    background-color: var(--purple);
+    width: 42.5rem;
+    height: 19.5rem;
+    border-radius: 1rem;
+}
+#keyboard-container .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7rem 0;
+}
+#keyboard-container .key {
+    width: 3rem;
+    height: 3rem;
+    margin: auto 0.2rem;
+    background-color: var(--light-purple);
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+} 
+#keyboard-container .backspace,
+.tab,
+.capslock,
+.enter,
+.shift,
+.space {
+    background-color: var(--light-purple);
+    border-radius: 0.5rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+#keyboard-container .backspace {
+    padding: 0 2.8rem;
+}
+#keyboard-container .tab {
+    padding: 0 1.1rem;
+}
+#keyboard-container .capslock {
+    padding: 0 0.6rem;
+}
+#keyboard-container .enter {
+    padding: 0 1.6rem;
+}
+#keyboard-container .shift {
+    padding: 0 2.3rem
+}
+#keyboard-container .space {
+    width: 50%;
+}
+#keyboard-container .key:hover,
+.backspace:hover,
+.tab:hover,
+.capslock:hover,
+.enter:hover,
+.shift:hover,
+.space:hover {
+    background-color: var(--click-light-purple) !important;
+} 
+.active-click {
+    background-color: var(--click-light-purple);
+}
+
