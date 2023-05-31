@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap');
+
+:root {
+    --white: #f8f6f4;
+    --white-shadow: #d8caca;
+    --yellow: #ffb84c;
+    --pink: #f266ab;
+    --pink-click: #f693c4;
+    --purple: #a459d1;
+    --purple-click: #ba7fdc;
+    --blue: #2cd3e1;
+    --blue-click: #63dee9;
+    --grey: #929aab;
+    --dark-grey: #393e46;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--white);
+}
+#score-div {
+    width: 20rem;
+    height: 9rem;
+    background-color: var(--yellow);
+    font-size: 3rem;
+    border-radius: 1.3rem;
+    text-align: center;
+    box-shadow: 0.5rem 0.5rem var(--white-shadow);
+}
+#label-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem 0.6rem;
+    font-size: 1.6rem;
+}
+#your-label {
+    color: var(--white);
+}
+#computer-label {
+    color: var(--dark-grey);
+}
+#result-div {
+    font-size: 1.6rem;
+}
+#result-div p::first-letter {
+    text-transform: capitalize;
+}
+#rps-button {
+    display: flex;
+    flex-direction: row;
+}
+.rps-choice{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: none;
+    margin: 0 2rem;
+    box-shadow: 0.4rem 0.4rem var(--white-shadow);
+    cursor: pointer;
+    text-align: center;
+}
+.rps-choice img {
+    width: 50%;
+}
+#rock {
+    background-color: var(--blue);
+}
+#rock:hover {
+    background-color: var(--blue-click);
+}
+#paper {
+    background-color: var(--pink);
+}
+#paper:hover {
+    background-color: var(--pink-click);
+}
+#scissors {
+    background-color: var(--purple);
+}
+#scissors:hover {
+    background-color: var(--purple-click);
+}
+
+.active-win {
+    color: var(--white);
+}
