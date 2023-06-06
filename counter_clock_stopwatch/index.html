@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_counter_clock_stopwatch_</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="counter-container">
+        <div id="counter-div">
+            <span id="count">0</span>
+            <div id="counter-button-div">
+                <button class="btn increase">
+                    <i class="fa-solid fa-caret-up"></i>
+                </button>
+                <button class="btn reset">
+                    <i class="fa-solid fa-repeat"></i>
+                </button>
+                <button class="btn decrease">
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+            </div>
+        </div>
+        <span id="name-span">COUNTER</span>
+    </div>
+
+    <div class="clock-container">
+        <div id="clock-div">
+            <span id="clock">00 : 00 : 00</span>
+            <span id="date">asdf</span>
+        </div>
+        <span id="name-span">CLOCK</span>
+    </div>
+
+    <div class="stopwatch-container">
+        <div id="stopwatch-div">
+            <div id="time-div">
+                <p id="time-p">00:00:00</p>
+                <span id="time-ms">000</span>
+            </div>
+            <div id="stopwatch-btn">
+                <button id="reset-button"><i class="fa-solid fa-minus"></i></button>
+                <button id="click-button">
+                    <i class="fa-solid fa-play" id="start-icon"></i>
+                    <i class="fa-solid fa-pause hidden" id="pause-icon"></i>
+                </button>
+            </div>
+        </div>
+        <span id="name-span">STOPWATCH</span>
+    </div>
+
+    <script src="js/counter.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/stopwatch.js"></script>
+</body>
+</html>

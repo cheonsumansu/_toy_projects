@@ -1,0 +1,166 @@
+
+:root {
+    --counter1: #f9f5f6;
+    --counter2: #f8e8ee;
+    --counter3: #fdcedf;
+    --counter4: #f2bed1;
+
+    --clock1: #f8f6f4;
+    --clock2: #e3f4f4;
+    --clock3: #d2e9e9;
+    --clock4: #c4dfdf;
+
+    --stopwatch1: #fefcf3;
+    --stopwatch2: #f5ebe0;
+    --stopwatch3: #f0d7d7;
+    --stopwatch4: #dba39a;
+
+    --name-text: #5e5e5e;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -3rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#name-span {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    padding: 0.5rem 3rem;
+}
+
+/*counter*/
+#counter-div {
+    background-color: var(--counter1);
+    width: 20rem;
+    height: 14rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 2rem;
+    border: 0.4rem solid var(--counter2);
+}
+#count {
+    font-size: 6rem;
+    font-weight: 600;
+    position: relative;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -60%);
+}
+#counter-button-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1.5rem;
+}
+#counter-button-div .btn {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: var(--counter4);
+    color: #ffffff;
+}
+#counter-button-div .btn:hover {
+    background-color: var(--counter3);
+}
+.counter-container #name-span {
+    background-color: var(--counter4);
+    margin-left: 3.2rem;
+}
+
+
+/*clock*/
+#clock-div {
+    background-color: var(--clock4);
+    width: 28rem;
+    height: 9rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0.5rem 0.5rem var(--clock2);
+}
+#clock {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+}
+#date {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--clock2);
+}
+.clock-container #name-span {
+    background-color: var(--clock4);
+    margin-left: 8.4rem;
+}
+
+
+/*stopwatch*/
+#stopwatch-div {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: var(--stopwatch4);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#time-p {
+    margin-top: 6.5rem;
+    font-size: 3.8rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+#time-ms {
+    font-size: 1.5rem;
+    color: var(--stopwatch3);
+}
+#stopwatch-btn button {
+    width: 4rem;
+    height: 2.5rem;
+    margin: 0.8rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--stopwatch2);
+    color: #3b3b3b;
+    cursor: pointer;
+}
+#stopwatch-btn button:hover {
+    background-color: var(--stopwatch1);
+}
+#stopwatch-btn i {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hidden {
+    display: none;
+}
+.stopwatch-container #name-span {
+    text-align: center;
+    background-color: var(--stopwatch4);
+    margin-left: 2.6rem;
+}
