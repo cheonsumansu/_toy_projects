@@ -21,3 +21,10 @@ the enter key does not work as desired... it is really... sad :(
 > let's play rock paper scissors by clicking rock, paper, and scissors button!   
 
 > i don't know what else to explain about this, so, let's move on!    
+<br>
+
+### counter_clock_stopwatch   
+> it is a literal meaning, counter, clock, and stopwatch.   
+
+> press the up and down buttons to count, check the current time and date, and measure time with stopwatch.   
+
