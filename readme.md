@@ -27,4 +27,10 @@ the enter key does not work as desired... it is really... sad :(
 > it is a literal meaning, counter, clock, and stopwatch.   
 
 > press the up and down buttons to count, check the current time and date, and measure time with stopwatch.   
+<br>
 
+### shopping_list   
+> simple shopping cart stored permanently using local storage.   
+
+> you can add to the cart by entering values, and change the number of items by clicking + or - buttons... oh, you can delete the items also.   
+> it is stored on local storage, so data remains after a reload or reconnect, and you can reset the shopping list by clicking the clear button.   
