@@ -1,0 +1,145 @@
+
+:root {
+    --ivory: #f5efe7;
+    --light-beige: #ede1d9;
+    --beige: #d8c4b6;
+    --light-blue: #7392ba;
+    --blue: #4f709c;
+    --deep-blue: #213555;
+    --alert: #d04c76;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--blue);
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+#list-container {
+    background-color: var(--ivory);
+    width: 46rem;
+    margin: 5rem auto;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+#shopping-div {
+    text-align: center;
+    padding-top: 2.5rem;
+}
+#shopping-div span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--deep-blue);
+}
+#shopping-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+#shopping-item {
+    width: 30rem;
+    height: 3rem;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 0.8rem 0 0 0.8rem;
+    border: none;
+}
+#item-button {
+    width: 5.5rem;
+    height: 3rem;
+    border-radius: 0 0.8rem 0.8rem 0;
+    border: none;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+.alert-message {
+    text-align: left;
+    margin: 0.4rem 5rem 0;
+    color: var(--alert);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#list-div {
+    justify-content: center;
+    margin: 2rem auto;
+    width: 40rem;
+    height: 20rem;
+    text-align: center;
+}
+#inventory-div {
+    height: 17rem;
+    border-radius: 1rem;
+    background-color: var(--light-beige);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.item-div {
+    margin: 0 1.3rem;
+    width: 37rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0;
+}
+.item-div:not(:last-child) {
+    border-style: none none dashed;
+    border-color: var(--light-blue);
+}
+.item-div p {
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+}
+.item-edit input {
+    width: 2.5rem;
+    height: 100%;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--deep-blue);
+    font-weight: 600;
+}
+.item-edit button{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--deep-blue);
+    cursor: pointer;
+    margin-left: 1rem;
+    border: none;
+}
+.item-edit button:hover {
+    background-color: var(--beige);
+    color: #ffffff;
+}
+#clear-button {
+    width: 9rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 1.2rem auto;
+}
+#item-button:hover, #clear-button:hover {
+    background-color: var(--light-blue);
+}
+.hidden {
+    display: none;
+}
